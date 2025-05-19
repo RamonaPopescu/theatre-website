@@ -1,0 +1,1326 @@
+* {
+  /* Alternativ box model for everithing  */
+  box-sizing: border-box;
+
+  /* Reset margin and padding for all elements */
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography  */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(60, 58, 71);
+  text-align: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 3.5rem;
+  margin: 3.5rem;
+}
+
+.single-show > h1 {
+  font-style: italic;
+  margin-left: 0;
+  margin-bottom: 2.5rem;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 5rem;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: start;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+h3.big {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: rgb(60, 58, 71);
+}
+
+.big:hover {
+  color: rgba(60, 58, 71, 0.2);
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.mutted {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: rgb(60, 58, 71);
+}
+
+a:hover {
+  color: rgba(60, 58, 71, 0.2);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* HOME PAGE */
+
+/* Header */
+
+.hamburger {
+  display: none;
+}
+
+header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.search-container {
+  display: flex;
+  cursor: pointer;
+  background: transparent;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+
+.input-search {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.input-search::placeholder {
+  color: white;
+  padding: 0.5rem;
+}
+
+.search-container:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.details {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.author {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.show-title {
+  color: white;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-size: 7rem;
+  font-style: italic;
+}
+
+.date {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin: 3rem 0 5rem 0;
+}
+
+/* Butoane */
+
+.button {
+  text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  font-weight: 700;
+}
+
+.button.white {
+  color: black;
+  background-color: white;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.button.white:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.button.dark {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.button.dark:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Get ypur tickets stripe */
+
+.tickets {
+  padding: 2rem 3rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+/* Secțiune citat */
+
+.welcome {
+  background-image: url(./Assets/backgroundq2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  margin: 5rem 0;
+}
+
+.welcome-text {
+  width: 45%;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.quote-author {
+  font-family: "Grey Qo", cursive;
+  font-size: 3rem !important;
+  margin-top: 2rem;
+  color: #c8a462;
+}
+
+/* Carusel Spectacole */
+
+.show-section {
+  padding: 0.1rem 3rem 3rem 3rem;
+}
+
+.show {
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: scroll; /* Permite derularea orizontală */
+  white-space: nowrap;
+}
+
+/* Define the scrollbar dimenions */
+.show::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+/* Define the line style */
+.show::-webkit-scrollbar-thumb {
+  background: #c8a462;
+  border-radius: 5px;
+}
+/* Define the track style */
+.show::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+}
+/* Define the button style */
+.show::-webkit-scrollbar-button {
+  background-color: #a2782b;
+  border-radius: 5px;
+}
+/* Define the button style when being hovered over */
+.show::-webkit-scrollbar-button:hover {
+  background-color: #999999;
+}
+
+.show-card {
+  flex-basis: 100%;
+}
+
+.show img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.show-details {
+  padding-top: 1rem;
+}
+
+.show-type {
+  text-align: start;
+  color: #c8a462;
+  margin: 0.5rem 0 3rem 0;
+}
+
+.show-more {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-more > .button {
+  color: black;
+  background-color: #c8a462;
+  font-weight: 400;
+  padding: 0.7rem;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.show-date {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  text-align: end;
+  color: #595959;
+}
+
+/* Next shows */
+
+.next-events {
+  a {
+    color: #c8a462;
+    font-family: "Playfair Display", serif;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.all-events {
+  margin-top: 2rem;
+}
+
+.devider {
+  border: 1px solid #dedede;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.next-show {
+  text-align: start;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.day,
+.show-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.day {
+  margin-left: 5px;
+}
+
+.next-date {
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
+
+/* CTA impozit 3.5% */
+
+.impozit {
+  padding: 2rem;
+}
+
+.impozit > h2 {
+  margin: 2rem;
+}
+
+.cta-impozit {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+/* Articole Section */
+
+.articole {
+  width: 80%;
+  margin: 0rem auto;
+  margin-bottom: 5rem;
+
+  a {
+    color: #c8a462;
+    font-family: "Playfair Display", serif;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.container-articole {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+  gap: 2rem;
+}
+
+.articole-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    grid-row: span 2;
+    max-width: 100%;
+  }
+}
+
+.extras {
+  margin-top: -2rem;
+}
+
+.article-name {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-top: 0.5rem;
+
+  a {
+    color: rgb(60, 58, 71);
+  }
+
+  a:hover {
+    color: rgba(60, 58, 71, 0.2);
+  }
+}
+
+.tag {
+  background-color: white;
+  position: relative;
+  right: 10%;
+  top: -15%;
+  padding: 1rem;
+}
+
+/* Client Quote */
+
+.quotes {
+  background-image: url(./Assets/library-of-congress.jpg);
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.quote-text {
+  color: white;
+  width: 60%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.quote-author {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem !important;
+}
+
+/* Partners */
+
+.partenr-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  img {
+    width: 110px;
+  }
+}
+
+/* Footer */
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+
+  a {
+    color: rgba(255, 255, 255);
+  }
+
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.contact li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.links-spectacole,
+.socials {
+  .devider {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 0.5px solid rgb(60, 58, 71);
+  }
+}
+
+.social-icons {
+  margin-bottom: 1.5rem;
+}
+
+.copy {
+  padding-bottom: 3rem;
+}
+
+/* SPECTACOLE PAGE */
+
+.wrapp {
+  padding-top: 10rem;
+  width: 80%;
+  margin: 0 auto;
+
+  .devider {
+    width: 100%;
+  }
+}
+
+.search-bar {
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-right,
+.search-left {
+  display: flex;
+}
+
+.search-left {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  resize: none;
+}
+
+.brown {
+  background-color: #c8a462;
+  color: white;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.brown:hover {
+  background-color: rgba(200, 164, 98, 0.8);
+}
+
+/* dropdown on hover */
+
+/* Butonul care la hover ar trebui să dezvăluie conținut */
+
+.dropbtn {
+  position: relative;
+  display: inline-block;
+
+  img {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Conținutul ce va fi afișat la hoover */
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  padding: 0.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 0.5rem;
+  display: block;
+  color: rgb(60, 58, 71);
+  text-align: start;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-list:hover .dropdown-content {
+  display: block;
+}
+
+/* Index Spectacole */
+
+.index-spectacole > h2 {
+  text-align: start;
+  margin-left: 0;
+}
+
+.line {
+  display: flex;
+}
+
+.line > p {
+  margin-right: 1rem;
+  font-style: italic;
+}
+
+/* ! Devider + date */
+
+.line::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #e4e4e4;
+  margin: auto;
+}
+
+.index-events {
+  margin-top: 3rem;
+}
+
+.item-event {
+  display: flex;
+  gap: 2rem;
+
+  img {
+    max-width: 22rem;
+  }
+}
+
+.index-event-details {
+  text-align: start;
+}
+
+.location {
+  margin-bottom: 2rem;
+}
+
+.price {
+  margin: 2rem 0 3rem 0;
+}
+
+.spectacole-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.devider-full {
+  border: 1px solid #dedede;
+  margin-bottom: 2rem;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+/* Single Event PAGE */
+
+.wrapp.single-show {
+  text-align: start;
+}
+
+.devider.single-show {
+  margin: 1rem 0;
+}
+
+.main-image-single-show {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.single-show-sinopsis > p {
+  margin: 2rem 0;
+}
+
+.tickets-table {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+
+  .devider {
+    grid-column: span 4;
+    margin: 0;
+    border: 0.1px solid rgba(60, 58, 71, 0.1);
+  }
+}
+
+.tickets-table {
+  border-right: 0.1px solid rgba(60, 58, 71, 0.1);
+  border-left: 0.1px solid rgba(60, 58, 71, 0.1);
+  margin-bottom: 3rem;
+}
+
+.table-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.table-cell {
+  padding: 1rem;
+}
+
+.type {
+  font-weight: 700;
+}
+
+.cart {
+  color: #c8a462;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.single-event-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion {
+  margin-bottom: 4rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.add-to-calendar:hover {
+  background-color: #faeed9;
+  transition: 1s;
+}
+
+.add-to-calendar {
+  border: 1px solid #c8a462;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.icon-add-to-calendar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.answer {
+  padding: 0.5rem;
+  border: 1px solid #c8a462;
+
+  p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  p:hover {
+    background-color: #dedede;
+    color: white;
+  }
+}
+
+.add-to-calendar:after {
+  content: url(../Theatre_Website/Assets/chevron-down.svg);
+}
+
+details[open] summary:after {
+  content: url(../Theatre_Website/Assets/chevron-up.svg);
+}
+
+.single-event-details div {
+  flex: 1;
+
+  .strong {
+    margin-top: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* About Us Page */
+
+.hero-secondary-page img {
+  max-width: 100%;
+}
+
+.hero-secondary-page {
+  position: relative;
+}
+
+.hero-secondary-page > h1 {
+  position: absolute;
+  letter-spacing: 5px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.about-story-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  gap: 2rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.about-story-text,
+.about-story-img {
+  flex-basis: 100%;
+}
+
+.coquette-team {
+  padding: 1rem 0 5rem 0;
+
+  h3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.image-overlay {
+  position: relative;
+  transition: 1s ease;
+}
+
+.member-image {
+  opacity: 1;
+}
+
+.social-member {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 0.8rem;
+}
+
+.image-overlay:hover .member-image {
+  opacity: 0.3;
+}
+
+.image-overlay:hover .social-member {
+  opacity: 1;
+}
+
+.about-team {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.coquette-member {
+  flex-basis: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Contact Page */
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map,
+.contact-form-container {
+  flex: 1;
+}
+
+.map img {
+  max-width: 100%;
+}
+
+.contact-icons-container {
+  margin: 2rem;
+}
+
+.contact-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+  margin-top: 1rem;
+}
+
+form {
+  text-align: start;
+  .brown {
+    border-radius: 0;
+  }
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #dedede;
+}
+
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+.dark.light {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.subscribe {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 2rem;
+}
+
+.cta-subscribe,
+.input-subscribe {
+  flex-basis: 100%;
+}
+
+.input-subscribe > input {
+  background-color: #595959;
+  padding: 1rem;
+  width: 60%;
+}
+
+.input-subscribe .brown {
+  margin-left: -5px;
+  border-radius: 0;
+}
+
+/* Responsive 900 - 1200px*/
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  /* Hero banner */
+
+  .show-title {
+    margin: 1.2rem;
+    font-size: 6rem;
+  }
+
+  .banner {
+    width: 100%;
+    position: relative;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+
+  .date {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Quote Section */
+
+  .welcome-text {
+    width: 90%;
+  }
+
+  .quote-text {
+    width: 80%;
+  }
+
+  /* Partners Logo */
+
+  .partenr-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-content {
+    width: 90%;
+  }
+
+  /* SPECTACOLE Page */
+
+  .item-event {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  /* About US Page */
+
+  .about-story-container {
+    flex-direction: column;
+  }
+
+  /* Contact */
+
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .map,
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .map {
+    order: 1;
+  }
+}
+
+/* Responsive Phone Range: < 900px */
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .single-show > h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu > summary {
+    display: flex;
+    justify-content: end;
+    padding-top: 1rem;
+  }
+
+  .mobile-menu > summary:after {
+    content: url(./Assets/list.svg);
+  }
+
+  .hamburger > details[open] summary:after {
+    content: url(./Assets/x-lg.svg);
+  }
+
+  .hamburger > details[open] div {
+    padding: 0.5rem;
+  }
+
+  .hamburger > details[open] {
+    margin-top: 8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Hero banner */
+
+  .banner {
+    margin-top: 6rem;
+  }
+
+  .show-title {
+    margin: 1rem;
+    font-size: 3rem;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    margin-bottom: 2.3rem;
+    font-weight: 400;
+  }
+
+  .button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .tickets {
+    gap: 6rem;
+  }
+
+  .welcome-text {
+    width: 90%;
+  }
+
+  /* Articole Section */
+
+  .articole {
+    width: 90%;
+  }
+
+  .container-articole {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  /* Client Quote */
+
+  .quote-text {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
+  .partenr-logo {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 4rem;
+    width: 70%;
+  }
+
+  /* Spectacole Page */
+
+  .item-event {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  /* About US */
+
+  .about-story-container {
+    flex-direction: column;
+  }
+
+  .about-team {
+    flex-direction: column;
+    width: 70%;
+    gap: 3rem;
+  }
+
+  /* Contact */
+
+  .hero-secondary-page img {
+    margin-top: 6rem;
+  }
+
+  .hero-secondary-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .map,
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .map {
+    order: 1;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Tickets Table */
+
+  .wrapp.single-show {
+    width: 90%;
+  }
+
+  .table-header {
+    font-size: 1rem;
+  }
+
+  .table-cell {
+    font-size: 0.8rem;
+  }
+
+  .cart {
+    font-size: 0.8rem;
+  }
+
+  .single-show-sinopsis p {
+    font-size: 0.9rem;
+  }
+
+  .single-event-details {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 4rem;
+  }
+}

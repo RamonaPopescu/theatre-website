@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../Assets/theatre-masks-svgrepo-com.svg"
+    />
+
+    <link rel="stylesheet" href="../../style.css" />
+
+    <title>Cerul va fi alb</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img
+          src="../../Assets/logo_cropped-image.png"
+          class="logo"
+          alt="Logo Teatrul Coquette"
+          height="80"
+        />
+      </a>
+      <nav>
+        <ul class="small desktop">
+          <li><a href="../../Public/spectacole.html">Spectacole</a></li>
+
+          <li><a href="../../Public/spectacole_copii.html">Pentru Copii</a></li>
+          <li><a href="../../Public/despre_noi.html">Despre Noi</a></li>
+          <li><a href="../../Public/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-container desktop">
+        <input class="input-search" type="text" placeholder="Caută..." />
+        <img
+          src="../../Assets/icons8-search.svg"
+          alt="search icon"
+          height="20"
+        />
+      </div>
+
+      <!-- Meniu Mobil -->
+
+      <div class="hamburger">
+        <details class="mobile-menu">
+          <summary class="menu-icon"></summary>
+          <div class="menu">
+            <a href="../../Public/spectacole.html">Spectacole</a>
+          </div>
+          <div class="menu">
+            <a href="../../Public/spectacole_copii.html">Pentru Copii</a>
+          </div>
+          <div class="menu">
+            <a href="../../Public/despre_noi.html">Despre Noi</a>
+          </div>
+          <div class="menu">
+            <a href="../../Public/contact.html">Contact</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <div class="wrapp single-show">
+      <div class="nav-left single-show">
+        <a href="../../spectacole.html">
+          <img
+            src="../../Assets/double-arrow-left-icon.svg"
+            height="10"
+            alt="arrow icon"
+          />
+        </a>
+        <a href="../spectacole.html">
+          <p class="strong">Toate evenimetele</p>
+        </a>
+      </div>
+
+      <h1>Cerul va fi alb</h1>
+      <p class="small">Octombrie 24, 2024 - Aprilie 18, 2025 40lei</p>
+      <img
+        src="../../Assets/spectacole_single/cerul_alb.jpg"
+        class="main-image-single-show"
+        alt="nopțile barbare"
+      />
+
+      <div class="single-show-sinopsis">
+        <p>
+          Inspirat din scrierile lui Tennessee Williams (Proprietate condamnată,
+          Menajeria de sticlă, Orfeu în infern șa), regizorul Mihai Manolescu
+          crează povestea lui Tom și Willie. Tom, un bărbat matur acum, revine
+          în locul în care adolescența lui a fost marcată puternic de prima
+          iubire.
+        </p>
+
+        <p>
+          Vine ca să materializeze amintirile care îl leagă de acel loc și
+          pentru ca ele să nu mai doară. Cel mai puternic, acestea se leagă de
+          imaginea unei fete ce se plimbă în echilibru instabil pe calea ferată.
+        </p>
+
+        <p>
+          Un spectacol la care vei tresări, vei râde, vei plânge și vei rămâne
+          cu gândul că totul durează „până într-o zi, când…”
+        </p>
+      </div>
+
+      <div class="tickets-table">
+        <p class="table-header dark">Tip de Bilet</p>
+        <p class="table-header dark">Preț</p>
+        <p class="table-header dark">Cantitate</p>
+        <p class="table-header dark">Coș bilete</p>
+
+        <p class="table-cell type">Standard</p>
+        <p class="table-cell">35lei</p>
+        <div class="table-cell">
+          <select name="qty" id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <a class="table-cell cart" href="">
+          <p>Adaugă în coș</p>
+        </a>
+
+        <div class="devider"></div>
+        <p class="table-cell type">Student</p>
+        <p class="table-cell">35lei</p>
+        <div class="table-cell">
+          <select name="qty" id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <a class="table-cell cart" href="">
+          <p>Adaugă în coș</p>
+        </a>
+        <div class="devider"></div>
+
+        <p class="table-cell type">VIP</p>
+        <p class="table-cell">99lei</p>
+        <div class="table-cell">
+          <select name="qty" id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <a class="table-cell cart" href="">
+          <p>Adaugă în coș</p>
+        </a>
+        <div class="devider"></div>
+        <p class="table-cell type">Free</p>
+        <p class="table-cell">0lei</p>
+        <div class="table-cell">
+          <select name="qty" id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <a class="table-cell cart" href="">
+          <p>Adaugă în coș</p>
+        </a>
+        <div class="devider"></div>
+      </div>
+
+      <details class="accordion">
+        <summary class="add-to-calendar">
+          <div class="icon-add-to-calendar">
+            <img
+              src="../../Assets/calendar-heart-fill.svg"
+              alt=""
+              height="20"
+            />
+            <p>Adaugă în calendar</p>
+          </div>
+        </summary>
+        <div class="answer">
+          <a href="">
+            <p>Google calendar</p>
+          </a>
+          <a href="">
+            <p>iCalendar</p>
+          </a>
+          <a href="">
+            <p>Outlook 365</p>
+          </a>
+          <a href="">
+            <p>Outlook Live</p>
+          </a>
+        </div>
+      </details>
+
+      <div class="single-event-details">
+        <div>
+          <h3>Details</h3>
+          <p class="strong">Start:</p>
+          <p class="small">April 18, 2022</p>
+          <p class="strong">End:</p>
+          <p class="small">April 18, 2022</p>
+          <p class="strong">Cost:</p>
+          <p class="small">35lei</p>
+          <p class="strong">Tip Eveniment:</p>
+          <a href="">Actiune</a>
+        </div>
+        <div>
+          <h3>Echipa</h3>
+          <p class="strong">Actori:</p>
+          <p class="small">Ioan Andrei-Ionescu, Ruxandra Bălașu</p>
+          <p class="strong">Regia:</p>
+          <p class="small">Mihai Manolescu</p>
+          <p class="strong">Scenografia:</p>
+          <p class="small">Mihai Manolescu</p>
+          <p class="strong">Coregrafia</p>
+          <p class="small">Andreea Novac</p>
+        </div>
+
+        <div>
+          <h3>Locație</h3>
+          <p class="strong">Teatrul Coquette</p>
+          <p class="small">Calea Călărași, nr. 94</p>
+          <p class="strong">Sala</p>
+          <p class="small">Sala Mare, etajul 2</p>
+        </div>
+
+        <div>
+          <a
+            href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x40b1ff2507940001:0x34cbf6c30ad16300?sa=X&ved=1t:8290&ictx=111"
+            target="_blank"
+            ><p class="strong">Direcții și traseu</p></a
+          >
+          <a
+            href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x40b1ff2507940001:0x34cbf6c30ad16300?sa=X&ved=1t:8290&ictx=111"
+            target="_blank"
+            ><img src="../../Assets/maps_coquette.png" alt="maps coquette"
+          /></a>
+        </div>
+      </div>
+
+      <div class="devider"></div>
+    </div>
+
+    <footer class="dark single-show">
+      <div class="footer-content">
+        <img src="../../Assets/map.jpg" alt="Map" />
+
+        <div class="links">
+          <p class="title">Info</p>
+          <div class="contact">
+            <ul class="small">
+              <li>
+                <img
+                  src="../../Assets/icon-location.png"
+                  alt="icon icon-location"
+                  height="24"
+                />
+                <p>Calea Călărași, nr. 94, București</p>
+              </li>
+              <li>
+                <img
+                  src="../../Assets/icons-envelope.png"
+                  alt="icon envelope"
+                  height="20"
+                />
+                <a href="mailto:acasa@teatrulcoquette.ro"
+                  >acasa@teatrulcoquette.ro</a
+                >
+              </li>
+              <li>
+                <img
+                  src="../../Assets/icons-phone.png"
+                  alt="phone icon"
+                  height="24"
+                />
+                <a href="tel:+0754990017">+0754990017</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="links spectacol">
+          <p class="title">Spectacole</p>
+          <div class="links-spectacole">
+            <ul>
+              <li>
+                <a href="../spectacole/hainele_imparatului.html"
+                  >Două surori și un plan</a
+                >
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a href="../spectacole/cerul_alb.html">Magnolii și cianură</a>
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a href="../spectacole/noptile_barbare.html">Nopțile Barbare</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="links socials">
+          <p class="title">Socials</p>
+          <div class="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/teatrulcoquette"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/teatrulcoquette.ro/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@teatrulcoquette422"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="dark">
+      <div class="social-icons">
+        <img
+          src="../../Assets/icons8-facebook.svg"
+          alt="facebook icon"
+          height="32"
+        />
+        <img
+          src="../../Assets/icons8-instagram.svg"
+          alt="instagram icon"
+          height="32"
+        />
+        <img
+          src="../../Assets/icons8-youtube.svg"
+          alt="youtube icon"
+          height="32"
+        />
+      </div>
+
+      <div>
+        <p class="copy small">
+          &copy; Copyright Teatrul Coquette 2024. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Assets/theatre-masks-svgrepo-com.svg"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Teatrul Coquette</title>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header>
+      <a href="./index.html">
+        <img
+          src="./Assets/logo_cropped-image.png"
+          class="logo"
+          alt="Logo Teatrul Coquette"
+          height="80"
+        />
+      </a>
+      <nav>
+        <ul class="small desktop">
+          <li><a href="./Public/spectacole.html">Spectacole</a></li>
+
+          <li><a href="./Public/spectacole_copii.html">Pentru Copii</a></li>
+          <li><a href="./Public/despre_noi.html">Despre Noi</a></li>
+          <li><a href="./Public/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-container desktop">
+        <input class="input-search" type="text" placeholder="Caută..." />
+        <img src="./Assets/icons8-search.svg" alt="search icon" height="20" />
+      </div>
+
+      <!-- Meniu Mobil -->
+
+      <div class="hamburger">
+        <details class="mobile-menu">
+          <summary class="menu-icon"></summary>
+          <div class="menu"><a href="./Public/spectacole.html">Spectacole</a></div>
+          <div class="menu"><a href="./Public/spectacole_copii.html">Pentru Copii</a></div>
+          <div class="menu"><a href="./Public/despre_noi.html">Despre Noi</a></div>
+          <div class="menu"><a href="./Public/contact.html">Contact</a></div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero dark">
+      <img src="./Assets/hero.jpg" alt="Theatre Image" class="banner" />
+
+      <div class="details">
+        <p class="author">după 1001 Nopți</p>
+        <h2 class="show-title">Nopțile Barbare</h2>
+        <p class="date">Octombrie 07-16.2024</p>
+
+        <div class="buttons">
+          <a
+            href="./Public/spectacole/noptile_barbare.html"
+            class="button white"
+            >Rezervă</a
+          >
+          <a href="./Public/spectacole.html" class="button dark">Descoperă</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tickets Stripe -->
+
+    <section class="tickets dark">
+      <div>
+        <h3>Get your tickets</h3>
+        <p class="small mutted">
+          Alege piesa și ziua în care ai vrea să o vezi.
+        </p>
+      </div>
+      <a href="./Public/spectacole.html" class="button white">Bilete</a>
+    </section>
+
+    <!-- Quote W. Shakespeare -->
+
+    <section class="welcome">
+      <div class="welcome-text">
+        <h1>Bine ați venit la Teatrul Coquette</h1>
+        <p>
+          „Lumea este o scenă, iar bărbații și femeile sunt doar actori. Au
+          multe ieșiri și multe intrări. Iar un om poate juca, în timpul lui,
+          mai multe roluri.”
+        </p>
+        <p class="quote-author">William Shakespeare</p>
+      </div>
+    </section>
+
+    <!-- Shows Carusel  -->
+
+    <div class="show-section dark">
+      <h2>Spectacole</h2>
+      <div class="show">
+        <div class="show-card">
+          <img
+            src="./Assets/spectacol_noptile_barbare.jpg"
+            alt="Noptile Barbare"
+          />
+          <div class="show-details">
+            <h3>Nopțile Barbare</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/noptile_barbare.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="./Assets/spectacil_cerul_alb.jpg" alt="Cerul va fi alb" />
+          <div class="show-details">
+            <h3>Cerul va fi alb</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/cerul_alb.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img
+            src="./Assets/spectacol_colonelul_pasarile.jpg"
+            alt="Colonelul și pasarile"
+          />
+          <div class="show-details">
+            <h3>Colonelul și păsările</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/cerul_alb.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="./Assets/doua_surori.jpg" alt="Două Surori" />
+          <div class="show-details">
+            <h3>Două Surori</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/noptile_barbare.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img
+            src="./Assets/spectacol_Hainele_imparatului.jpg"
+            alt="Hainele cele noi ale împăratului"
+          />
+          <div class="show-details">
+            <h3>Hainele cele noi ale împăratului</h3>
+            <p class="show-type">Teatru</p>
+            <div class="show-more small">
+              <a
+                href="./Public/spectacole/hainele_imparatului.html"
+                class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img
+            src="./Assets/spectacol_impăiați_iubiții.jpg"
+            alt="Împăiați-vă iubiții"
+          />
+          <div class="show-details">
+            <h3>Împăiați-vă iubiții</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/cerul_alb.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="show-card">
+          <img
+            src="./Assets/spectacol_magnolii_cianură.jpg"
+            alt="Magnolii și Cianură"
+          />
+          <div class="show-details">
+            <h3>Magnolii și Cianură</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a href="./Public/spectacole/noptile_barbare.html" class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="show-card">
+          <img src="./Assets/spectacol_Ursul.jpg" alt="Ursul" />
+          <div class="show-details">
+            <h3>Ursul</h3>
+            <p class="show-type small">Teatru</p>
+            <div class="show-more">
+              <a
+                href="./Public/spectacole/hainele_imparatului.html"
+                class="button"
+                >Mai Mult</a
+              >
+              <p class="show-date">din 10 Oct până pe 10 Mar 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Events Section -->
+
+    <div class="next-events">
+      <h2>Următoarele Spectacole</h2>
+
+      <div class="devider"></div>
+
+      <div class="next-show">
+        <div class="next-date">
+          <p class="small">Sept</p>
+          <p class="day">12</p>
+        </div>
+
+        <div>
+          <p class="small">Septembrie 12, 2024 - Aprilie 18, 2025</p>
+          <p class="show-name">Nopțile Barbare</p>
+        </div>
+      </div>
+
+      <div class="next-show">
+        <div class="next-date">
+          <p class="small">Sept</p>
+          <p class="day">24</p>
+        </div>
+
+        <div>
+          <p class="small">Septembrie 12, 2024 - April 18, 2025</p>
+          <p class="show-name">Comedie despre insomnie</p>
+        </div>
+      </div>
+
+      <div class="next-show">
+        <div class="next-date">
+          <p class="small">Sept</p>
+          <p class="day">25</p>
+        </div>
+
+        <div>
+          <p class="small">Septembrie 25, 2024 - April 18, 2025</p>
+          <p class="show-name">Magnolii și cianură</p>
+        </div>
+      </div>
+
+      <div class="all-events">
+        <a href="./Public/spectacole.html">Vezi toate evenimentele...</a>
+        <div class="devider"></div>
+      </div>
+    </div>
+
+    <div class="impozit dark">
+      <h2>Sprijină Teatrul Coquette!</h2>
+      <p class="cta-impozit">
+        Donează 3.5% din impozit pentru cultură! Fiecare actor care vă face să
+        râdeți sau să plângeți, fiecare spectacol care vă lasă sufletul plin,
+        toate acestea sunt posibile datorită sprijinului și pasiunii voastre!
+        Mulțumim!
+      </p>
+    </div>
+
+    <!-- Blog -->
+
+    <div class="articole">
+      <h2>Articole</h2>
+      <div class="container-articole">
+        <div class="articole-item">
+          <img src="./Assets/articole_noptile_barbare.jpg" alt="impozit" />
+          <div class="tag">
+            <p class="small">10/05/2024</p>
+            <p class="article-name"><a href="">3.5% Impozit pe venit</a></p>
+          </div>
+          <p class="extras small">
+            Redirecționează 3,5% din impozitul tău pe venit deja virat statului.
+            Poți depune Declarația 230 până pe 27 Mai 2024.
+          </p>
+        </div>
+        <div class="articole-item">
+          <img
+            src="./Assets/articole_revenim_scena.webp"
+            alt="Scena Coquette"
+          />
+          <div class="tag">
+            <p class="small">27/08/2020</p>
+            <p class="article-name">
+              <a href="">Revenim pe scenă, în octombrie</a>
+            </p>
+          </div>
+          <p class="extras small">
+            Luna octombrie este luna în care spectacolele noastre revin pe
+            scenă, dupa 7 luni de pauză! Pe scena Sălii George Constantin, a
+            Teatrului Nottara. Vă așteptăm să vă bucurați de magia și bucuria
+            teatrului...
+          </p>
+        </div>
+        <div class="articole-item">
+          <img src="./Assets/articole_zile_fericite.webp" alt="Zile fericite" />
+          <div class="tag">
+            <p class="small">27/08/2020</p>
+            <p class="article-name"><a href="">Zile Fericite</a></p>
+          </div>
+          <p class="extras small">
+            Un spectacol născut din tumultul de a face, din pasiunea creatorilor
+            lui, strânsă pe durata restricțiilor și din dăruire. Cu ce energie
+            și emoție se manifestă ele în scena? Vă invităm să vedeți...
+          </p>
+        </div>
+        <div class="articole-item">
+          <img src="./Assets/articole_garden.jpg" alt="Teatru in grădina" />
+          <div class="tag">
+            <p class="small">27/08/2020</p>
+            <p class="article-name">
+              <a href="">Teatru în grădină, pentru copii</a>
+            </p>
+          </div>
+          <p class="extras small">
+            Căutăm să jucăm, căutăm să supraviețuim, căutăm să ne ducem mai
+            departe povestea! În luna septembrie, scoatem la grădină
+            spectacolele dragi pentru publicul și mai drag: copiii...
+          </p>
+        </div>
+      </div>
+      <a href="./Public/spectacole.html">Vezi toate articolele...</a>
+    </div>
+
+    <!-- Customer Quote -->
+
+    <div class="quotes">
+      <p class="quote-text">
+        "De fiecare dată când am fost cu fetița mea de 7 ani ne-am distrat
+        maxim. Piesele sunt interactive si jucate cu mult suflet. Vă vom mai
+        călca pragul."
+      </p>
+      <p class="quote-author">Bogdan</p>
+    </div>
+
+    <!-- Partners Logo -->
+
+    <div class="partners">
+      <h2>Partenerii noștri:</h2>
+      <div class="partenr-logo">
+        <a href="https://www.artasunetelor.ro/Home.html" target="_blank"
+          ><img src="./Assets/partenrs_arta.jpg" alt="icon partner"
+        /></a>
+        <a href="https://www.calendarulcopiilor.ro/" target="_blank"
+          ><img src="./Assets/partner_calcopiilor.jpg" alt="icon partner"
+        /></a>
+        <a href="https://www.umblat.ro/" target="_blank"
+          ><img src="./Assets/partner_umblat.jpg" alt="icon partner"
+        /></a>
+        <a href="https://www.bucuresteni.ro/" target="_blank"
+          ><img src="./Assets/partners_bucuresteni.jpg" alt="icon partner"
+        /></a>
+        <a href="https://www.calendarevenimente.ro/"
+          ><img src="./Assets/partners_calendar.jpg" alt="icon partner"
+        /></a>
+        <a href="https://www.cinemagia.ro/" target="_blank"
+          ><img src="./Assets/partners_cinemagia.jpg" alt="icon partner"
+        /></a>
+        <a
+          href="https://dailymagazine.ro/2017/06/13/eneli-lanseaza-cold-impreuna-cu-videoclip-oficial"
+          target="_blank"
+          ><img src="./Assets/partners_daily.jpg" alt="icon partner"
+        /></a>
+        <a href="https://gokid.ro/" target="_blank"
+          ><img src="./Assets/partners_gokid2.png" alt="icon partner"
+        /></a>
+        <a
+          href="https://www.facebook.com/groups/teatru-pro-1636821566543388/"
+          target="_blank"
+          ><img src="./Assets/partners_teatrulpro.jpg" alt="icon partner"
+        /></a>
+        <a
+          href="https://www.pauldutu.eu/category/cultura/teatru/"
+          target="_blank"
+          ><img src="./Assets/partnes_paul.jpg" alt="icon partner"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="dark">
+      <div class="footer-content">
+        <img src="./Assets/map.jpg" alt="Map" />
+
+        <div class="links">
+          <p class="title">Info</p>
+          <div class="contact">
+            <ul class="small">
+              <li>
+                <img
+                  src="./Assets/icon-location.png"
+                  alt="icon icon-location"
+                  height="24"
+                />
+                <p>Calea Călărași, nr. 94, București</p>
+              </li>
+              <li>
+                <img
+                  src="./Assets/icons-envelope.png"
+                  alt="icon envelope"
+                  height="20"
+                />
+                <a href="mailto:acasa@teatrulcoquette.ro"
+                  >acasa@teatrulcoquette.ro</a
+                >
+              </li>
+              <li>
+                <img
+                  src="./Assets/icons-phone.png"
+                  alt="phone icon"
+                  height="24"
+                />
+                <a href="tel:+0754990017">+0754990017</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="links spectacol">
+          <p class="title">Spectacole</p>
+          <div class="links-spectacole">
+            <ul>
+              <li><a href="#">Două surori și un plan</a></li>
+              <li class="devider"></li>
+              <li><a href="#">Magnolii și cianură</a></li>
+              <li class="devider"></li>
+              <li>
+                <a href="./Public/spectacole/noptile_barbare.html"
+                  >Nopțile Barbare</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="links socials">
+          <p class="title">Socials</p>
+          <div class="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/teatrulcoquette"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/teatrulcoquette.ro/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="devider"></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@teatrulcoquette422"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="dark">
+      <div class="social-icons">
+        <img
+          src="./Assets/icons8-facebook.svg"
+          alt="facebook icon"
+          height="32"
+        />
+        <img
+          src="./Assets/icons8-instagram.svg"
+          alt="instagram icon"
+          height="32"
+        />
+        <img src="./Assets/icons8-youtube.svg" alt="youtube icon" height="32" />
+      </div>
+
+      <div>
+        <p class="copy small">
+          &copy; Copyright Teatrul Coquette 2024. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
